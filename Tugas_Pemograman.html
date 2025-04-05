@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Diri</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f7c2c2;
+            margin: 0;
+            padding: 0;
+        }
+        section {
+            background: rgb(136, 188, 238);
+            margin: 20px auto;
+            padding: 20px;
+            width: 50%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        .media-container {
+            text-align: center;
+        }
+        .media-container img, 
+        .media-container video {
+            width: 250px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+        .table-container {
+            overflow-x: auto;
+            width: 100%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 5px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #7e8185;
+            color: white;
+        }
+        form {
+            text-align: center;
+        }
+        input, select {
+            width: 80%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #3b3737;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4bb964;
+            color: rgb(243, 236, 236);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        /* Galeri */
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgb(136, 188, 238);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tabs button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            background: #5e5c5c;
+            color: rgb(234, 239, 241);
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .tabs button.active {
+            background: #110f0f;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+        .gallery img, .gallery video {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="perkenalan">
+        <h2>Profil Diri</h2>
+        <div class="media-container">
+            <img src="profil.jpg" alt="Foto Profil">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/VAIxB9XeDRM" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <h1>Halo🤗 Saya Maria Ulpa</h1>
+        <p>Perkenalkan, saya Maria Ulpa. Saya berasal dari Sakra, Lombok Timur, NTB. Saya memiliki minat dalam Travelling dan Kuliner.</p>
+        <p>Saya merupakan seorang mahasiswa di Universitas Hamzanwadi🏬. Pada tahun 2024, saya telah melakukan pertukaran mahasiswa merdeka di Universitas Negeri Yogyakarta🏢.</p>
+        <p>Saya senang belajar hal-hal baru dan berkolaborasi dengan orang lain. Di waktu luang, saya suka Membaca Buku📚.</p>
+        <p>Senang bisa berbagi lebih banyak tentang diri saya dengan Anda☺️</p>
+    </section>
+
+    <section id="profil">
+        <h1>(PROFIL PERKULIAHAN)</h1>
+        <p><strong>Nama:</strong> Maria Ulpa</p>
+        <p><strong>Pendidikan:</strong> S1 Universitas Hamzanwadi</p>
+        <p><strong>Tempat, Tanggal Lahir:</strong> Pondok Ganti, 21-09-2002</p>
+        <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+        <p><strong>Email:</strong> ulpamaria420@gmail.com</p>
+        <p><strong>Telepon:</strong> 081-776-949-248</p>
+        <p><strong>Alamat:</strong> Pondok Ganti, Sakra, Lombok Timur, NTB</p>
+        
+        <h2>(JADWAL PERKULIAHAN)</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Hari</th>
+                    <th>Waktu</th>
+                    <th>Kode</th>
+                    <th>Mata Kuliah</th>
+                    <th>Ruangan</th>
+                    <th>Dosen/Pengajar</th>
+                    <th>SKS</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Senin</td>
+                    <td>14:00-15:40</td>
+                    <td>PIN6423</td>
+                    <td>Jaringan Dasar</td>
+                    <td>Lab 1</td>
+                    <td>Jamaluddin</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Selasa</td>
+                    <td>08:55-10:35</td>
+                    <td>PIN6422</td>
+                    <td>Pemrograman Web</td>
+                    <td>Lab 1</td>
+                    <td>Heri Kuswanto</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Rabu</td>
+                    <td>14:00-15:40</td>
+                    <td>MBKMPI6640</td>
+                    <td>Telaah Kurikulum Pendidikan</td>
+                    <td>D402</td>
+                    <td>Rasyid Hardi Wirasasmita</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Kamis</td>
+                    <td>11:00-13:40</td>
+                    <td>PIN6426</td>
+                    <td>Multimedia Lanjut</td>
+                    <td>D402</td>
+                    <td>Yosi Nur Kholisho</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <div class="container">
+        <h1>Galeri Foto & Video</h1>
+        <div class="tabs">
+            <button onclick="showGallery('photoGallery')" class="active">Album Foto</button>
+            <button onclick="showGallery('videoGallery')">Album Video</button>
+        </div>
+        <div id="photoGallery" class="gallery"></div>
+        <div id="videoGallery" class="gallery hidden"></div>
+    </div>
+
+    <section id="formulir">
+        <h2>Formulir Pendaftaran Mahasiswa Baru</h2>
+        <form id="studentRegistrationForm">
+            <input type="text" id="name" placeholder="Nama Lengkap" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Nomor HP" required>
+            <input type="text" id="birthplace" placeholder="Tempat Lahir" required>
+            <input type="date" id="birthdate" required>
+            <select id="program" required>
+                <option value="">Pilih Program Studi</option>
+                <option value="Pendidikan Informatika">Pendidikan Informatika</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Manajemen">Manajemen</option>
+                <option value="Akuntansi">Akuntansi</option>
+                <option value="Bahasa Inggris">Bahasa Inggris</option>
+                <option value="Farmasi">Farmasi</option>
+            </select>
+            <input type="submit" value="Daftar">
+        </form>
+    </section>
+
+    <script>
+        function showGallery(id) {
+            document.getElementById("photoGallery").classList.add("hidden");
+            document.getElementById("videoGallery").classList.add("hidden");
+
+            document.getElementById(id).classList.remove("hidden");
+
+            document.querySelectorAll(".tabs button").forEach(button => button.classList.remove("active"));
+            document.querySelector(`.tabs button[onclick="showGallery('${id}')"]`).classList.add("active");
+        }
+
+        function loadGallery(folder, elementId, fileList, type) {
+            const gallery = document.getElementById(elementId);
+            gallery.innerHTML = "";
+            fileList.forEach(file => {
+                let item;
+                if (type === 'image') {
+                    item = document.createElement('img');
+                    item.src = `${folder}/${file}`;
+                    item.alt = "Foto Galeri";
+                } else if (type === 'video') {
+                    item = document.createElement('video');
+                    item.controls = true;
+                    let source = document.createElement('source');
+                    source.src = `${folder}/${file}`;
+                    source.type = "video/mp4";
+                    item.appendChild(source);
+                }
+                gallery.appendChild(item);
+            });
+        }
+
+        const fotoFiles = ["foto1.jpg", "foto2.jpg", "foto3.jpg", "foto4.jpg", "foto5.jpg", "foto6.jpg", "foto7.jpg", "foto8.jpg", "foto9.jpg", "foto10.jpg", "foto11.jpg", "foto12.jpg", "foto13.jpg", "foto14.jpg", "foto15.jpg"];
+        const videoFiles = ["video1.mp4", "video2.mp4", "video3.mp4", "video4.mp4", "video5.mp4", "video6.mp4", "video7.mp4", "video8.mp4", "video9.mp4"];
+
+        loadGallery('foto', 'photoGallery', fotoFiles, 'image');
+        loadGallery('video', 'videoGallery', videoFiles, 'video');
+    </script>
+</body>
+</html>
